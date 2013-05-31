@@ -18,7 +18,7 @@ class motd {
     file { '/etc/motd':
       ensure  => file,
       backup  => false,
-      content => "puppet://modules/motd/motd.DICE",
+      source => "puppet:///modules/motd/motd.DICE",
     }
   }
 }
